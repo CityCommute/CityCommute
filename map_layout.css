@@ -1,3 +1,5 @@
+max-width: 700px
+
 #map {
   display:flex;
 	flex-flow:row;
