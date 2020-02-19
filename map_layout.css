@@ -1,5 +1,6 @@
-max-width: 100px;
-
+body {
+   background-image: url("https://images.idgesg.net/images/article/2019/01/apple-maps-duckduckgo-100785363-large.jpg")
+}
 .map {
   width:10px;
   height:50px;
