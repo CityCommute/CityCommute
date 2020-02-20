@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    overflow: visible;
+    margin: 0px;
+    display: grid;
+    /* grid-template-columns: 100px auto;
+    grid-template-rows: auto 100px; */
+    grid-template-areas:
+       "top"
+       "main";
+    /* height: 100vh; */
+    background: rgb(43, 43, 43);
+}
+h1{
+    align-content: stretch center;
+    color: rgb(202, 0, 202);
+}
+header {
+    background: rgb(43, 43, 43);
+    grid-area:top ;
+    color: rgb(202, 0, 202);;
+}
+
+main {
+    background: rgb(43, 43, 43);
+    grid-area: main;
+   /* min-height: calc(350px);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 3;*/
+}
+
