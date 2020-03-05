@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>CityCommuter</title>
+        <link rel="stylesheet" href="globals.css">
+        <link rel="stylesheet" href="dropdown_layout.css">
+        <link rel="stylesheet" href="map_layout.css"/>
+        <link rel="stylesheet" href="options_layout.css"/>
+        <!---New stuff--->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+        <style>  
+            #mapid { height:250px; width:100%; }
+        </style>
+    </head>
+    <body id="container">
+                <h1>
+                <a href = "home.html">    
+                    <i class="fas fa-space-shuttle"></i>                    
+                    CityCommuter 
+                </a>
+
+                    <div>
+                        <script type='text/javascript' src='https://darksky.net/widget/default-small/42.0461,-87.6912/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=6fffe9&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Sans-Serif&customFont=&units=us'></script>
+                        <h2>Current Location: Evanston</h2>
+                    </div>
+                </h1>
+                
+        <main>
+            <!---new line-->
+            <div id="mapid"></div>
+            <!---new -->
+            <!--<input type="text" placeholder="Type a location" id="location">
+            <button id="search">Search</button>-->
+            <!---<nav>
+                <select class = 'prefs' id="preferences">
+                    <option value="time">Time</option>
+                    <option value="cost">Cost</option>
+                    <option value="safety">Safety</option>
+                    <option value="weather">Weather</option>
+                </select>
+            </nav>-->   
+                <article id="featured-content"></article>
+            
+
+            
+        </main>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <footer>
+            <button class = "button" onclick = "location.href='home.html'" type="button">
+                <i class="fas fa-home"></i>
+                Home
+            </button>
+            <!-- <div id="cont_a3e3dc0be7b827dea7fb0bc4c6efcbd9"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/a3e3dc0be7b827dea7fb0bc4c6efcbd9"></script></div> -->
+            <button class = "button" onclick = "location.href='https://calendar.google.com/calendar/r'" type="button">
+                <i class="fa fa-calendar"></i>
+                Calendar
+            </button>
+            <button class = "button" onclick = "location.href='https://venmo.com/account/sign-in'" type="button">
+                <i class="fa fa-dollar"></i>
+                Wallet
+            </button>
+        </footer>
+        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+        <!-- Scripts -->
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+        <script lang="text/javascript" src="index.js"></script>
+    </body>
+</html>
