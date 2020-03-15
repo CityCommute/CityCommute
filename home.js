@@ -59,7 +59,7 @@ const submit = (ev) => {
         localStorage.setItem("lyft", "not")
     }
     localStorage.setItem("initial_location", location)
-    window.location.href = "CC_index.html";
+    window.location.href = "main.html";
 
 };
 
