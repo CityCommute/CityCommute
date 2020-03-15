@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link rel="stylesheet" href="home.css">
+</head>
+    <body>
+        <div id = "title">
+            <h1>
+                Welcome to CityCommuter!
+            </h1>
+            <h2>Please fill out the following information:</h2>
+        </div>
+
+
+        <label for="location">Current location: *</label><br>
+        <input type="text" id="location" name="location" placeholder="(e.g. 2145 Sheridan Rd, Evanston)"><br><br>
+
+        <label for="destination">Desired destination: *</label><br>
+        <input type="text" id="destination" name="destination" placeholder="(e.g. 420 Superior St, Chicago)"><br><br>
+
+
+        <p>How would you like to sort your transport options? *</p>
+        <input type="radio" id="travel-time" name="preference" value="travel-time">
+        <label for="travel-time">Travel time</label><br>
+        
+        <input type="radio" id="cost" name="preference" value="cost">
+        <label for="cost">Cost</label><br>
+        
+        <input type="radio" id="no-preference" name="preference" value="no-preference">
+        <label for="no-preference">No preference</label>
+        <br><br>
+
+        <p>Which transport options would you like to view? *</p>
+
+        <div>
+            <p>Please select all that apply:</p>
+        </div>
+        
+        <input type="checkbox" id="bus" name="bus" value="bus">
+        <label for="bus">Bus</label><br>
+        
+        <input type="checkbox" id="bicycle" name="bicycle" value="bicycle">
+        <label for="bicycle">Bicycle</label><br>
+        
+        <input type="checkbox" id="train" name="train" value="train">
+        <label for="train">Train</label><br>
+
+        <input type="checkbox" id="drive" name="drive" value="drive">
+        <label for="drive">Drive</label><br>
+        
+        <input type="checkbox" id="uber" name="uber" value="uber">
+        <label for="uber">Uber</label><br>
+
+        <input type="checkbox" id="lyft" name="lyft" value="lyft">
+        <label for="lyft">Lyft</label><br>
+
+        <hr>
+        <br><br>
+        <button id="submit">Load My Route</button>
+        <script lang="text/javascript" src="home.js"></script>
+    </body>
+</html>
